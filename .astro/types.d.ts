@@ -144,19 +144,40 @@ declare module 'astro:content' {
 } & { render(): Render[".mdoc"] };
 };
 "pages": {
+"community.mdoc": {
+	id: "community.mdoc";
+  slug: "community";
+  body: string;
+  collection: "pages";
+  data: any
+} & { render(): Render[".mdoc"] };
 "hidden-page.mdoc": {
 	id: "hidden-page.mdoc";
   slug: "hidden-page";
   body: string;
   collection: "pages";
-  data: InferEntrySchema<"pages">
+  data: any
+} & { render(): Render[".mdoc"] };
+"rules.mdoc": {
+	id: "rules.mdoc";
+  slug: "rules";
+  body: string;
+  collection: "pages";
+  data: any
+} & { render(): Render[".mdoc"] };
+"strategy.mdoc": {
+	id: "strategy.mdoc";
+  slug: "strategy";
+  body: string;
+  collection: "pages";
+  data: any
 } & { render(): Render[".mdoc"] };
 "styles.mdoc": {
 	id: "styles.mdoc";
   slug: "styles";
   body: string;
   collection: "pages";
-  data: InferEntrySchema<"pages">
+  data: any
 } & { render(): Render[".mdoc"] };
 };
 "portfolioGroups": {
@@ -172,5 +193,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../src/content/config.js");
+	export type ContentConfig = never;
 }
