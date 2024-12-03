@@ -3,7 +3,7 @@
   "position": {
     "discriminant": "top",
     "value": {
-      "u": "1712840379550",
+      "u": "1733189567362",
       "alwaysDropdown": true
     }
   },
@@ -14,7 +14,7 @@
     "topBarHeight": "60px",
     "topBarPadding": "1rem",
     "menuPadding": "1rem",
-    "subItemIndent": "10px"
+    "subItemIndent": "6px"
   },
   "colors": {
     "backgroundColor": "#4A90E2",
