@@ -172,13 +172,6 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdoc"] };
-"styles.mdoc": {
-	id: "styles.mdoc";
-  slug: "styles";
-  body: string;
-  collection: "pages";
-  data: any
-} & { render(): Render[".mdoc"] };
 };
 "portfolioGroups": {
 };

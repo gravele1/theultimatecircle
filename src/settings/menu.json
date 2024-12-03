@@ -1,10 +1,10 @@
 {
-  "siteTitle": "Website",
+  "siteTitle": "THE ULTIMATE CIRCLE",
   "position": {
     "discriminant": "top",
     "value": {
       "u": "1712840379550",
-      "alwaysDropdown": false
+      "alwaysDropdown": true
     }
   },
   "appearance": {
@@ -17,9 +17,9 @@
     "subItemIndent": "10px"
   },
   "colors": {
-    "backgroundColor": "#9cacff87",
-    "menuHoverColor": "#ffffff80",
-    "dropdownColor": "#0a0057ed",
+    "backgroundColor": "#4A90E2",
+    "menuHoverColor": "#FFC832",
+    "dropdownColor": "#ffffffed",
     "dropdownHoverColor": "#ffffff80"
   },
   "typography": {
@@ -29,7 +29,7 @@
       "fontStyle": "normal",
       "fontSize": "1.5rem",
       "lineHeight": 1,
-      "color": "#0a0057",
+      "color": "#1A202C",
       "marginTop": "0.5rem",
       "marginBottom": "0.5rem"
     },
@@ -44,7 +44,7 @@
       "marginBottom": "4px"
     },
     "menuText": {
-      "fontFamily": "fontStack3",
+      "fontFamily": "fontStack1",
       "fontWeight": "400",
       "fontStyle": "normal",
       "fontSize": "1.5rem",
