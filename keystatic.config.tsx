@@ -62,6 +62,7 @@ export default config({
       "Layout/Appearance": [
         "menu",
         "typeOptions",
+        "footer",
       ],
       Settings: ["fonts", "general"],
     },
@@ -148,6 +149,30 @@ export default config({
         }),
         customNavigation: customNavField,
 
+        content: fields.markdoc({
+          label: "Content",
+          components: {
+            ...standardComponents,
+            ...pageComponents,
+          },
+          options: {
+            table: false,
+
+            image: {
+              directory: "src/assets/images/pages",
+              publicPath: "../../assets/images/pages/",
+            },
+          },
+        }),
+      },
+    }),
+    footer: singleton({
+      label: "Footer",
+      entryLayout: "content",
+      previewUrl: "/",
+      format: { contentField: "content" },
+      path: "src/content/footer/index",
+      schema: {
         content: fields.markdoc({
           label: "Content",
           components: {

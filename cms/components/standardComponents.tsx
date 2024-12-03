@@ -186,6 +186,105 @@ export const standardComponents = {
     },
   }),
 
+  PageSection: wrapper({
+    label: "Page Section",
+    description:
+      "use this to create a section with a background color, custom padding, etc",
+    schema: {
+      sizing: fields.object(
+        {
+          boxWidth: customFields.cssUnit({
+            label: "Section Width",
+            defaultValue: "100%",
+            isCompact: true,
+          }),
+          contentWidth: fields.conditional(
+            fields.checkbox({
+              label: "Custom content width",
+              defaultValue: false,
+            }),
+            {
+              false: fields.empty(),
+              true: customFields.cssUnit({
+                label: "Content Block Width",
+                defaultValue: "800px",
+                isCompact: true,
+              }),
+            },
+          ),
+        },
+        { label: "Sizing", layout: [6, 6] },
+      ),
+      spacing: fields.object(
+        {
+          boxPaddingTop: customFields.cssUnit({
+            label: "Top Padding",
+            defaultValue: "1rem",
+            isCompact: true,
+          }),
+          boxPaddingBottom: customFields.cssUnit({
+            label: "Bottom Padding",
+            defaultValue: "1rem",
+            isCompact: true,
+          }),
+          boxPaddingLeft: customFields.cssUnit({
+            label: "Left Padding",
+            defaultValue: "1rem",
+            isCompact: true,
+          }),
+          boxPaddingRight: customFields.cssUnit({
+            label: "Right Padding",
+            defaultValue: "1rem",
+            isCompact: true,
+          }),
+          alignContentBox: fields.select({
+            label: "Horizontally Align Content",
+            options: [
+              { label: "Left", value: "flex-start" },
+              { label: "Right", value: "flex-end" },
+              { label: "Center", value: "center" },
+            ],
+            defaultValue: "center",
+          }),
+          spaceBefore: customFields.cssUnit({
+            label: "Space Before Section",
+            defaultValue: "1rem",
+            isCompact: true,
+          }),
+          spaceAfter: customFields.cssUnit({
+            label: "Space After Section",
+            defaultValue: "1rem",
+            isCompact: true,
+          }),
+        },
+        { label: "Spacing", layout: [6, 6, 6, 6, 12, 6, 6] },
+      ),
+      bgType: fields.conditional(
+        fields.select({
+          label: "Background Type",
+          defaultValue: "none",
+          options: [
+            { label: "None", value: "none" },
+            { label: "Color", value: "color" },
+            { label: "Image", value: "image" },
+          ],
+        }),
+        {
+          none: fields.empty(),
+          image: fields.image({
+            label: "Background Image",
+            directory: "src/assets/images",
+            publicPath: "",
+          }),
+          color: customFields.colorPicker({
+            label: "BG Color",
+            allowAlpha: true,
+          }),
+        },
+      ),
+    },
+  }),
+
   HeroSection: wrapper({
     label: "Hero Section",
     schema: {

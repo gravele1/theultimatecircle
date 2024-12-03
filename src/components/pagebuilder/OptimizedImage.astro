@@ -2,7 +2,7 @@
 const { props } = Astro;
 const imagePath = props.src;
 import Image from "astro/components/Image.astro";
-import { settings } from "../helpers/settingsHelper";
+// import { settings } from "../helpers/settingsHelper";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "./../../assets/images/**/*.{jpeg,jpg,png,gif}"
