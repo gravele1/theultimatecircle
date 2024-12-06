@@ -3,8 +3,8 @@
   "position": {
     "discriminant": "top",
     "value": {
-      "u": "1733189567362",
-      "alwaysDropdown": true
+      "u": "1733449948362",
+      "alwaysDropdown": false
     }
   },
   "appearance": {
@@ -18,8 +18,8 @@
   },
   "colors": {
     "backgroundColor": "#D3DFF2",
-    "menuHoverColor": "#DB4D27",
-    "dropdownColor": "#ffffffed",
+    "menuHoverColor": "#F1D8CF",
+    "dropdownColor": "#DB4D27",
     "dropdownHoverColor": "#F1D8CF"
   },
   "typography": {
@@ -29,7 +29,7 @@
       "fontStyle": "normal",
       "fontSize": "1.5rem",
       "lineHeight": 1,
-      "color": "#1A202C",
+      "color": "#2B3C97",
       "marginTop": "0.5rem",
       "marginBottom": "0.5rem"
     },
